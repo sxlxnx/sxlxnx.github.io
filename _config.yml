@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: La biblioteca de Selene
 description: Acá iré subiendo todas mis producciones literarias.
+include:
+  - assets
