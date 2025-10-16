@@ -7,6 +7,7 @@
 * Física II
 * Química General
 * Química Orgánica
+ * [Producción de nitrobenceno](./quimica.html)
 
 ## Apuntes:
 
