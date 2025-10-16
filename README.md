@@ -2,12 +2,12 @@
 
 ## Informes
 
-* Análisis II
-* Física I
-* Física II
-* Química General
-* Química Orgánica
- * [Producción de nitrobenceno](./quimica.html)
+-Análisis II
+-Física I
+-Física II
+-Química General
+-Química Orgánica
+ -[Producción de nitrobenceno](./quimica.html)
 
 ## Apuntes:
 
