@@ -1,37 +1,41 @@
-# My Markdown Example
+# Mis producciones
 
-This is a **paragraph** of text. It demonstrates how to use *bold* and _italic_ formatting. You can also use ***bold and italic*** together.
+## Informes
 
-## Headings
+* Análisis II
+* Física I
+* Física II
+* Química General
+* Química Orgánica
 
-### Sub-heading 1
-#### Sub-heading 2
+## Apuntes:
 
-## Lists
+* Análisis II
+* Física I
+* Física II
+* Química General
+* Química Orgánica
 
-**Unordered List:**
-* Item one
-* Item two
-    * Nested item
-* Item three
+## Artículos matemáticos
 
-**Ordered List:**
-1. First item
-2. Second item
-3. Third item
+* Resolviendo todos los problemas de la OMA
+* Resolviendo todas las integrales del MIT
+ 
+## Ensayos
 
-## Links and Images
+* La izquierda tiene soluciones
 
-This is an [example link](https://www.example.com "Example Website").
+## Poemas
 
-## Code
+* Haikú de la semana
+* Soneto apolineo
 
-**Inline code:** `print("Hello, World!")`
+## Reseñas de libros
 
-**Code block:**
-```python
-def greet(name):
-    return f"Hello, {name}!"
+* Filosofía de la Miseria
+* El Capital
+* Rayuela
 
-message = greet("Markdown")
-print(message)
+## Reseñas de música
+
+* La genialidad de ser un *beatle*
