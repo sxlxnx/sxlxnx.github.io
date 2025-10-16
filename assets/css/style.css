@@ -1,0 +1,7 @@
+body {
+  background-image: url("https://ruta-de-tu-imagen.jpg");
+  background-size: cover;         /* para que ocupe toda la pantalla */
+  background-attachment: fixed;   /* para que no se mueva al hacer scroll */
+  background-position: center;    /* centrada */
+  color: #fff;                    /* opcional: texto blanco para contraste */
+}
