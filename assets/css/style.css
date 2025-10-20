@@ -12,7 +12,8 @@ body {
 }
 
 div {
-  background-color: rgb(232,	195,	158)
+  padding:50px;
+  background-color: rgb(232,	195,	158);
 }
 
 h1, h2, h3, h4, h5, h6 {
