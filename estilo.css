@@ -9,6 +9,7 @@ body
   font-size: 12px;
   font-weight:400;
   position: absolute;
+  display: block;
 }
 
 div 
