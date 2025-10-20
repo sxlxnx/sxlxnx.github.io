@@ -8,12 +8,15 @@ body
   font-family: Times New Roman;
   font-size: 12px;
   font-weight:400;
+  position: absolute;
 }
 
 div 
 {
   margin-left=150px;
-  padding:50px;
+  padding: 50px;
   background-color: rgb(232,	195,	158);
   display: inline-block;
+  position: relative;
+  right: 50px;
 }
