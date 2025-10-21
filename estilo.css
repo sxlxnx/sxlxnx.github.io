@@ -4,7 +4,7 @@ body
   background-size: cover;      
   background-attachment: fixed;
   background-position: center;
-  padding: 38px 50px;
+  padding: 50px;
   font-family: Times New Roman;
   font-size: 12px;
   display: flex;
@@ -20,6 +20,7 @@ div
   background-color: rgb(232,	195,	158);
   display: inline-block;
   border-radius: 5px;
+  border-color: rgb(63,	34, 18);
 }
 
 h1,h2,p
@@ -30,10 +31,11 @@ h1,h2,p
 
 h1,h2
 {
-text-align: center;
+  text-align: center;
+  color: rgb(63,	34, 18);
 }
 
 h1
 {
-font-size: 24px;
+  font-size: 24px;
 }
