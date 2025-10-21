@@ -9,7 +9,9 @@ body
   font-size: 12px;
   display: flex;
   align-items: start;
+  @media (min-width: 600px) {
   justify-content: space-around;
+  }
 }
 
 div 
