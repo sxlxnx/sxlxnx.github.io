@@ -21,6 +21,8 @@ div
   display: inline-block;
   border-radius: 5px;
   border-color: rgb(63,	34, 18);
+  border-style: solid;
+  border-width: 1px;
 }
 
 h1,h2,p
