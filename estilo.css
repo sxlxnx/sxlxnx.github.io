@@ -21,11 +21,17 @@ div
   display: inline-block;
 }
 
+h1,h2,p
+{
+  margin: 12px 0;
+  line-height: 24px;
+}
+
 h1,h2
 {
-margin: 0px;
 text-align: center;
 }
+
 h1
 {
 font-size: 24px;
