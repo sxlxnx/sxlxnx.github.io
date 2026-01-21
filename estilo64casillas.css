@@ -17,10 +17,10 @@ div
 {
   margin: 50px;
   padding: 38px 50px;
-  background-color: rgb(232,	195,	158);
+  background-color: rgb(224, 255, 255);
   display: inline-block;
   border-radius: 5px;
-  border-color: rgb(63,	34, 18);
+  border-color: rgb(255,	255, 255);
   border-style: solid;
   border-width: 1px;
 }
