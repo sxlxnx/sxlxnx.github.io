@@ -1,0 +1,442 @@
+<style>
+  html, body, div
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  body 
+  {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    font-family:Trebuchet MS;
+  }
+
+  div
+  {
+    display: block;
+    padding: 50px 30px;
+  }
+
+  .header
+  {
+    padding: 5px 50px;
+  }
+
+  .header, .div2
+  {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .div1, .div3, .div5, .div7
+  {
+    background-color: rgb(245, 245, 245);
+  }
+
+  .div8
+  {
+    background-color: rgb(45, 45, 45);
+    color: rgb(255,255,255);
+  }
+
+  .div9
+  {
+    background-color: rgb(0,0,0);
+  }
+
+  h1,h2,p
+  {
+    margin: 0;
+    line-height: 48px;
+    font-size: 12px;
+  }
+
+  .marca 
+  {
+    text-align: left;
+    color: rgb(50, 50, 50);
+    font-size: 24px;
+  }
+
+  h1,h2
+  {
+    font-size: 36px;
+  }
+
+  .div1
+  {
+    background-image: url(fondo1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(0,0,0);
+  }
+
+  .div2
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .div2 h2
+  {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  
+  .grilla
+  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .curso
+  {
+    width: 330px;
+    height: 190px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    display: flex;
+    padding: 10px 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    box-shadow: 1px 1px 5px rgb(220,220,220),
+                -1px -1px 5px rgb(220,220,220);
+    border-radius: 10px;
+    gap: 30px;
+  }
+
+  .curso:hover
+  {
+    box-shadow: 2px 2px 10px rgb(220,220,220),
+                -2px -2px 10px rgb(220,220,220);
+    transition-property: width, height;
+    transition-duration: 10s;
+    transform: scale(1.05,1.05);
+    cursor: pointer;
+  }
+  .miniatura, .descripción
+  {
+    padding: 0;
+    display: flex;
+    max-width: 125px;
+    max-height: 125px;
+  }
+
+  .descripción
+  {
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+  }
+
+  .miniatura img
+  {
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+  }
+
+  .descripción h1
+  {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .descripción p
+  {
+    margin: 0;
+    font-size: 11px;
+    line-height: 12px;
+  }
+  
+  .div3
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    padding: 5px;
+    gap: 50px;
+  }
+
+  .div3 h2, .div5 h2, .div6 h2
+  {
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .div3 p, .div7 p
+  {
+    margin: 0;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .div4 p
+  {
+    margin: 0;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    font-family:Courier New;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(0,0,0);
+    max-width: 800px;
+  }
+
+  .div5 p, .div6 p
+  {
+    margin: 0;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    max-width: 800px;
+  }
+
+  .div5
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .descripción-javier, .div7 p
+  {
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .div4
+  {
+    background-image: url(fondo4.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .div5, .div6
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .div7
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .div8
+  {
+    padding-top: 20px;
+  }
+  .div8 h2
+  {
+    font-size: 24px;
+    line-height: 48px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family:Georgia;
+    margin-top: 20px;    
+  }
+
+  .div8 p
+  {
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+    border-bottom: solid;    
+    padding-bottom: 20px;
+    border-width: 1px;
+  }
+  .imagen-digital img, .div5 img, .div6 img
+  {
+    width: 500px;
+    border-radius: 20px;
+  }
+</style>
+
+<head>
+  <title> Academia 64 Casillas </title>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="marca">Academia <span style="color: rgb(220, 20, 60);">6</span><span style="color: rgb(60, 220, 20);">4</span> Casillas</h1>
+  </div>
+  <div class="div1">
+    <h1 style="font-family:Georgia">Revolucioná tu ajedrez</h1>
+    <h2 style="font-family:Courier New"> Cursos asincrónicos </h2>
+  </div>
+  <div class="div2">
+    <h2 style="font-family:Georgia">Cursos de ajedrez</h2>
+    <div class="grilla">
+      <div class="curso">
+        <div class="miniatura">
+          <img src="miniatura-peondamaaislado.png" />
+        </div>
+        <div class="descripción">
+          <h1>Peón de dama aislado</h1>
+          <p>Aprendé los planes típicos para ambos bandos en esta estructura.</p>
+          <h1>$20 000</h1>
+        </div>
+      </div>
+      <div class="curso">
+        <div class="miniatura">
+          <img src="miniatura-peonescolgantes.png" />
+        </div>
+        <div class="descripción">
+          <h1>Peones colgantes</h1>
+          <p>Aprendé los planes típicos para ambos bandos en esta estructura.</p>
+          <h1>$20 000</h1>
+        </div>
+      </div>
+      <div class="curso">
+        <div class="miniatura">
+          <img src="miniatura-formacióncarokann.png" />
+        </div>
+        <div class="descripción">
+          <h1>Formación Caro-Kann</h1>
+          <p>Aprendé los planes típicos para ambos bandos en esta estructura.</p>
+          <h1>$20 000</h1>
+        </div>
+      </div>
+      <div class="curso">
+        <div class="miniatura">
+          <img src="miniatura-formacióneslava.png" />
+        </div>
+        <div class="descripción">
+          <h1>Formación Eslava</h1>
+          <p>Aprendé los planes típicos para ambos bandos en esta estructura.</p>
+          <h1>$20 000</h1>
+        </div>
+      </div>
+      <div class="curso">
+        <div class="miniatura">
+          <img src="miniatura-formacióncarlsbad.png" />
+        </div>
+        <div class="descripción">
+          <h1>Formación Carlsbad</h1>
+          <p>Aprendé los planes típicos para ambos bandos en esta estructura.</p>
+          <h1>$20 000</h1>
+        </div>
+      </div>
+      <div class="curso">
+        <div class="miniatura">
+          <img src="miniatura-murodepiedra.png" />
+        </div>
+        <div class="descripción">
+          <h1>Muro de Piedra</h1>
+          <p>Aprendé los planes típicos para ambos bandos en esta estructura.</p>
+          <h1>$20 000</h1>
+        </div>
+      </div>
+      <div class="curso">
+        <div class="miniatura">
+          <img src="miniatura-centrogrunfeld.png" />
+        </div>
+        <div class="descripción">
+          <h1>Centro de Grünfeld</h1>
+          <p>Aprendé los planes típicos para ambos bandos en esta estructura.</p>
+          <h1>$20 000</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div3">
+    <div class="foto-javier">
+      <img src="javier2.png" style="border-radius: 20px;"/>
+    </div>
+    <div class="descripción-javier">
+      <h2 style="font-family:Georgia">Javier Sosa</h2>
+      <p>Fundador y profesor principal de Academia 64 Casillas. Entrenador con más de 10 años de experiencia enseñando ajedrez a jugadores de todos los niveles. Apasionado por ayudar a los estudiantes a mejorar su juego a través de un enfoque práctico y estructurado.</p>
+    </div>
+  </div>
+  <div class="div4">
+    <p> ¿Alguna vez tuviste un mal torneo?, ¿alguna vez arruinaste una posición ganadora?, ¿alguna vez sentiste que no sabías cómo mejorar tu posición?  </p>
+    <p> Entonces, esto es para vos. </p>
+  </div>
+  <div class="div6">
+    <img src="chess-player.jpg">
+    <div class="descripción-javier">
+      <p> ¿Te gustaría saber cómo transitar y convertir cualquier mediojuego?, ¿te gustaría saber qué planes priorizar?, ¿te gustaría mejorar tu nivel de juego y ganar partidas y torneos? </p>
+      <p> Nuestra academia está dirigida a jugadores amateur que quieren incorporar conocimientos posicionales y estratégicos para jugar torneos <b>y ganarlos</b>. </p>
+    </div>
+  </div>
+  <div class="div5">
+    <div class="descripción-javier">
+      <p> Proporcionamos cursos situados en desequilibrios posicionales y estratégicos <b>específicos</b>, para que aprendas a convertir cualquier mediojuego en un final ganador, independientemente de la apertura de la que provenga. </p>
+      <p> Ya te realizamos el trabajo de investigación, te seleccionamos el mejor material disponible, te lo explicamos en un video y, además, te dejamos ejercicios para que tengas un aprendizaje <b>cómodo y activo. </b><p>
+    </div>
+    <img src="fondo8.jpeg">
+  </div>
+  <div class="div6">
+    <img src="fondo5.jpeg">
+    <div class="descripción-javier">
+    <h2 style="font-family:Georgia"> Acompañamiento personalizado </h2>
+    <p> Con la compra de tu curso, quedamos a tu disposición para resolver tus inquietudes y analizar tus partidas relacionadas con la temática del curso. </p>
+    </div>
+  </div>
+  <div class="div5">
+    <div class="descripción-javier">
+    <h2 style="font-family:Georgia"> Flexibilidad </h2>
+    <p> Los cursos son completamente digitales y asincrónicos y podés seguirlos desde el dispositivo que quieras (computadora, celular, tablet), desde la plataforma que quieras (youtube, lichess, nuestra página) y desde la comodidad de tu hogar. </p>
+    </div>
+    <div class="imagen-digital"><img src="fondo7.jpeg"></div>
+  </div> 
+  <div class="div6">
+    <img src="fondo3.jpg">
+    <div class="descripción-javier">
+    <h2 style="font-family:Georgia"> Probanos </h2>
+    <p>Todos los cursos tienen disponible la primera clase para su visualización gratuita.</p>
+    </div>
+  </div>
+  <div class="div8">
+    <h2> ¿Cómo funciona la compra? </h2>
+    <p> Dando clic al botón de comprar, te redirigimos a un formulario, en el que te pedimos que adjuntes el comprobante de transferencia, tus datos y alguna recomendación de otros cursos que te gustaría que ver en la página. Luego, nosotros revisamos el formulario y te enviamos todo a tu correo. </p>
+    <h2> ¿Cómo están armados los cursos? </h2>
+    <p> Una vez que comprás el curso, te mandamos a tu correo los links a un estudio de lichess con todo el material, a una playlist de youtube con todas las clases grabadas y a nuestra página, en la que encontrarás todo ordenado. Además, te mandamos nuestro correo y número telefónico para que resolvamos cualquier duda que te surja mientras realizás el curso. </p>
+    <h2> ¿Hay alguna promoción? </h2> 
+    <p> Si compraste un curso, te gustó, tenés ganas de recomendarnos y nos etiquetás en tus redes sociales, tenés un 50% de descuento para tu próximo curso. </p>
+  </div>
+  <div class="div9"></div>
+</body>
